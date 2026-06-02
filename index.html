@@ -1,0 +1,93 @@
+<!--
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: Nome do tema escolhido
+Aluno 1: Pedro Veloso Santiago Lima - RA: 251170
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Information - Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand logo" href="index.html">Tech Info</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><button id="btnTema" class="btn btn-outline-light ms-3 btn-sm mt-1">Mudar
+                                Tema</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="espacamento-topo">
+        <section class="hero container mb-5">
+            <div id="carouselTech" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded-4 shadow">
+                    <div class="carousel-item active">
+                        <img src="./img/hardware.jpg" class="d-block w-100" alt="hardware">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded px-3 py-2">
+                            <h2>O Futuro do Hardware</h2>
+                            <p>Novas arquiteturas prometem revolucionar o processamento de dados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="destaques container">
+            <div class="secao-titulo mb-4">
+                <p class="rotulo text-primary fw-bold">Últimas Notícias</p>
+                <h2>Destaques no Mundo Tech</h2>
+            </div>
+
+            <div class="area-destaques">
+                <article class="card card-personalizado">
+                    <img src="./img/monitor.jpg" class="card-img-top" alt="monitor">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Atualização no Spring Boot</h3>
+                        <p class="card-text text-muted">A nova versão traz melhorias significativas na performance de
+                            aplicações backend.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Ler mais</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape mt-5">
+        <div class="container">
+            <p>Projeto desenvolvido para a AF - Linguagens de Programação.</p>
+            <p>Aluno 1: Pedro Veloso Santiago Lima - RA: 251170</p>
+            <p>&copy; 2026 - Projeto acadêmico sem fins comerciais.</p>
+        </div>
+    </footer>
+
+    <button id="btnTopo" class="btn-topo" title="Voltar ao topo">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

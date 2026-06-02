@@ -1,0 +1,102 @@
+/*
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: Nome do tema escolhido
+Aluno 1: Pedro Veloso Santiago Lima - RA: 251170
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+*/
+
+:root {
+    --bg-principal: #f8fafc;
+    --bg-secundario: #ffffff;
+    --texto-principal: #0f172a;
+    --texto-suave: #64748b;
+    --cor-destaque: #0284c7; 
+    --sombra: rgba(0, 0, 0, 0.1);
+}
+
+body.tema-escuro {
+    --bg-principal: #0f172a;
+    --bg-secundario: #1e293b;
+    --texto-principal: #f8fafc;
+    --texto-suave: #94a3b8;
+    --cor-destaque: #38bdf8;
+    --sombra: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.espacamento-topo {
+    padding-top: 90px;
+}
+
+.area-destaques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-personalizado {
+    flex: 1 1 300px;
+    max-width: 380px;
+    background-color: var(--bg-secundario);
+    border: none;
+    box-shadow: 0 4px 6px var(--sombra);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-personalizado:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px var(--sombra);
+}
+
+body.tema-escuro .card-personalizado .card-title,
+body.tema-escuro .card-personalizado .card-text {
+    color: var(--texto-principal) !important;
+}
+
+.btn-topo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background-color: var(--cor-destaque);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+}
+
+.btn-topo.mostrar {
+    display: block;
+}
+
+.rodape {
+    background-color: #212529;
+    color: #fff;
+    padding: 2.5rem 0;
+    text-align: center; 
+}
+
+.rodape p {
+    margin-bottom: 0.4rem; 
+    line-height: 1.6;
+}
+
+.rodape p:last-child {
+    margin-bottom: 0; 
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
