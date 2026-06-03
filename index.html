@@ -44,7 +44,18 @@ Data de entrega: 07/06
     <main class="espacamento-topo">
         <section class="hero container mb-5">
             <div id="carouselTech" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselTech" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselTech" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselTech" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
                 <div class="carousel-inner rounded-4 shadow">
+
                     <div class="carousel-item active">
                         <img src="./img/hardware.jpg" class="d-block w-100" alt="hardware">
                         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded px-3 py-2">
@@ -52,26 +63,34 @@ Data de entrega: 07/06
                             <p>Novas arquiteturas prometem revolucionar o processamento de dados.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="destaques container">
-            <div class="secao-titulo mb-4">
-                <p class="rotulo text-primary fw-bold">Últimas Notícias</p>
-                <h2>Destaques no Mundo Tech</h2>
-            </div>
-
-            <div class="area-destaques">
-                <article class="card card-personalizado">
-                    <img src="./img/monitor.jpg" class="card-img-top" alt="monitor">
-                    <div class="card-body">
-                        <h3 class="card-title h5">Atualização no Spring Boot</h3>
-                        <p class="card-text text-muted">A nova versão traz melhorias significativas na performance de
-                            aplicações backend.</p>
-                        <a href="#" class="btn btn-primary btn-sm">Ler mais</a>
+                    <div class="carousel-item">
+                        <img src="./img/ia.jpg" class="d-block w-100" alt="inteligencia artificial">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded px-3 py-2">
+                            <h2>Avanços na Inteligência Artificial</h2>
+                            <p>Como as novas redes neurais estão moldando o mercado de trabalho.</p>
+                        </div>
                     </div>
-                </article>
+
+                    <div class="carousel-item">
+                        <img src="./img/programacao.jpg" class="d-block w-100" alt="código de programação na tela">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded px-3 py-2">
+                            <h2>Desenvolvimento Web 2026</h2>
+                            <p>Os frameworks mais exigidos pelas empresas de tecnologia neste ano.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTech" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTech" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+
             </div>
         </section>
     </main>
